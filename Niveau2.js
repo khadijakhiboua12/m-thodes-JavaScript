@@ -25,20 +25,19 @@ function calculerTotal() {
  },0);
          return total;
 }
-              console.log(calculerTotal());
+        console.log(calculerTotal());
 
  
 function appliquerPromotion() {
 // appliquer 10% de réduction sur les produits en promo
-   let verif=catalogue.forEach(function(ex){
+    catalogue.forEach(function(ex){
         if(ex.promo===true){
-             ex.prix=ex.prix-10;
-        }
+             ex.prix=ex.prix*0.9;
+    }
 });
-  
 }
    appliquerPromotion();
-   console.log(panier);
+   console.log(catalogue);
 
 function produitsChers(seuil) {
 // trouver les produits au-dessus du seuil
