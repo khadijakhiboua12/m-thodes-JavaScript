@@ -11,8 +11,8 @@ filter(callbackFn, thisArg)
 // Qu’est-ce que je peux mettre entre les parenthèses ?
 callbackFn:  une fonction a executer pour chaque element du tableau .
 elle doit retourner une valeur vraie pour concerver lelement dans  le tableau resultat.
-et une valeur fausse sinon .la fonction esr appele avec les arguments suivantes:
-elemnt,index,Array
+et une valeur fausse sinon .la fonction est appele avec les arguments suivantes:
+(elemnt,index,Array)
 thisArg: valeur a utiliser comme this lors de lexecution de callbackFn.
 
 
@@ -20,16 +20,10 @@ thisArg: valeur a utiliser comme this lors de lexecution de callbackFn.
 un nouveau tableau contenant  uniquement les elements qui passent en Test 
 si aucun eleement ne passe le test ,un tableau vide est renvoye;
 
-
-
-// Qu’est-ce qu’elle me donne en retour ?
-un nouveau tableau contenant  uniquement les elements qui passent en Test 
-si aucun eleement ne passe le test ,un tableau vide est renvoye;
-
-
 // 4. QUAND L’UTILISER ?
 on utilise filer() lorsqu'on veut crer un nouveau tableau contenat uniquement les elements
 qui respectent une conditions;
+
 // Dans quelles situations cette méthode est utile ?
 Sélectionner des éléments spécifiques
 Filtrer des objets selon une propriété
@@ -38,7 +32,7 @@ Extraire des éléments selon une logique complexe
 // 5. CE QU’ELLE NE FAIT PAS
 Ne modifie pas le tableau original
 Ne retourne pas un seul élément
-Callback doit toujours retourner une valeur booléenne
+
 */
  
  // ==============================
@@ -65,16 +59,9 @@ Un nouveau tableau composé des images de la fonction de rappel.
 
 // 4. QUAND L’UTILISER ?
 Quand tu veux transformer chaque élément d’un tableau sans toucher au tableau original.
-
 Quand tu veux créer un nouveau tableau avec les résultats de la transformation.
-
 Quand tu veux garder la même longueur de tableau mais changer le contenu de chaque élément.
-// Dans quelles situations cette méthode est utile ?
-Quand tu veux transformer chaque élément d’un tableau sans toucher au tableau original.
 
-Quand tu veux créer un nouveau tableau avec les résultats de la transformation.
-
-Quand tu veux garder la même longueur de tableau mais changer le contenu de chaque élément.
 // 5. CE QU’ELLE NE FAIT PAS
 Ne modifie pas le tableau original
  Ne filtre pas les éléments
@@ -99,25 +86,14 @@ currentValue:c’est l’élément suivant du tableau.
 currentIndex:position
 array
 
-// Qu’est-ce que je peux mettre entre les parenthèses ?
-accumulator:C’est la valeur que la fonction reduce()
-construit petit à petit.
-currentValue:c’est l’élément suivant du tableau.
-currentIndex:position
-array
 
 // 3. CE QU’ELLE RETOURNE
 retourne toujours une seule valeur ,cette valeur peut etre n'importe quel type
 number/string/array/object/boolean
-// Qu’est-ce qu’elle me donne en retour ?
-number/string/array/object/boolean
 
 // 4. QUAND L’UTILISER ?
 lorsqu'on veut transformer un tableau en une seule valeur
-
-// Dans quelles situations cette méthode est utile ?
 Faire des calculs sur tous les éléments
-Concaténer des chaînes
 
 // 5. CE QU’ELLE NE FAIT PAS
  Ne crée pas de nouveau tableau automatiquement
@@ -133,6 +109,7 @@ Ne modifie pas le tableau original
 // ==============================
 // 1. MA DÉFINITION PERSONNELLE
 envoie le premier élément du tableau fourni qui satisfait
+
 la fonction de test. Si aucune valeur ne satisfait la
 fonction de test, undefined est renvoyé.
 elle ne parcourt le tableau que jusqu'au premier  resultat qui 
@@ -156,14 +133,14 @@ si aucun element ne correspond =>retourn undefined.
 // 4. QUAND L’UTILISER ?
 Quand tu veux trouver un élément précis dans un tableau.
 Quand tu ne veux que le premier résultat correspondant à une condition.
-// Dans quelles situations cette méthode est utile ?
+
 
 // 5. CE QU’ELLE NE FAIT PAS
-Ne continue pas après le premier élément trouvé =>
+Ne continue pas après le premier élément trouvé
 les autres éléments ne sont pas testés.
 Ne modifie pas le tableau original
 Ne filtre pas tous les éléments
-Ne retourne pas un tableau
+
 */
 
 
@@ -184,8 +161,6 @@ fromIndex:
 Index à base zéro à partir duquel commencer la recherche,
 converti en entier.
 
-
-// Qu’est-ce que je peux mettre entre les parenthèses ?
 // 3. CE QU’ELLE RETOURNE
 true: si l'eelement tu charche est existe dans string ou array
 false:si l'elelement tu charche pas present
@@ -490,4 +465,6 @@ Ne modifie pas l’array ou le string
 // Pour exécuter une action sur chaque élément sans créer un nouveau tableau.
 // 5. CE QU’ELLE NE FAIT PAS
 // Elle ne crée pas un nouveau tableau et ne retourne pas de valeur.
+
+
 

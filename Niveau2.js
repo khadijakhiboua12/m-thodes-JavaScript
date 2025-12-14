@@ -16,7 +16,7 @@ let prd=catalogue.find(function(ex){
 
 panier.push({...prd, quantité:quantité});
 }
-  ajouterAuPanier("A1",1);
+  ajouterAuPanier("A1",9);
    console.log(panier);
 
 function calculerTotal() {
@@ -45,9 +45,9 @@ return panier.filter(ex=>ex.prix>seuil)
 }  
     console.log(produitsChers(2));
 
-function viderPanier() {
-// vider le panier
-  panier.length=0;
-}
-    viderPanier();
- console.log(panier);
+// function viderPanier() {
+// // vider le panier
+//   panier.length=0;
+// }
+//     viderPanier();
+//  console.log(panier);

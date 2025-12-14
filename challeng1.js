@@ -50,7 +50,7 @@ let addself= myNums.map(function(el){
        return  el+el;
 });
 
-let swappingcases="elZERO";
+let swappingcases="emcAln";
 let invertedNumbers=[1,-10,-20,15,100,-30];
 let ignoreBooleans="Elz123er4o";
 //SUR UN STRING
@@ -101,6 +101,7 @@ let configActive=Object.entries(config)
      return acc;
 },{});
     console.log(configActive);
+    
 //   Pour find()
   //sur array
 let etudiants = [
@@ -112,7 +113,7 @@ let premierEtudinat=etudiants.find(function(ex){
         return ex.present;
 });
   console.log(premierEtudinat);
-  
+
    //sur string
 const phrasee = "Je suis développeur web";
 const premierMotLong = phrasee.split(' ').find(function(mot){
